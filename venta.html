@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brand</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+    <!-- aqui empiea el navbar -->
+    <nav class="fadeInDown">
+        <div class="brand-image">
+            <img src="img/BRAND.png" alt="">
+        </div>
+        <div class="nav-options">
+            <ul>
+                <li><a href="#">Faqs</a></li>
+                <li><a href="#">Producto y descripcion</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- aqui acaba el navbar -->
+    <!-- Empieza formulario -->
+    <div class="container main-venta">
+        <div class="row">
+            <div class="col-4">
+                <div class="modulo-pago">
+                    <div class="img-pago">
+
+                        <img src="img/chocholate-n.png" alt="">
+                    </div>
+                    <h3>Producto 1</h3>
+                    <p>Un chocholate puro y con un sabor inolvidable no querras que se acabe.</p>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="modulo-pago form">
+                    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8FAWN5R9PSQ9L" method="post">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="" id="name" class="data">
+                        <label for="mail">Email</label>
+                        <input type="email" name="email" placeholder="" id="mail" class="data">
+                        <label for="tel">Telefono</label>
+                        <input type="text" name="phone" placeholder="" id="tel" class="data">
+                        <input class="main-button" type="submit" name="submit" value="Lo quiero">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- termina formulario -->
+    <!-- Aqui comienza el footer -->
+    <footer>
+        <p class="terminos">Terminos y condiciones</p>
+        <p>radeon777@live.com</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

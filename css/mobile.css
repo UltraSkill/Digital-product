@@ -1,0 +1,16 @@
+@media (max-width: 680px){
+    .main-section {
+        height: 100px;
+    }
+    .products,
+    .caracteristicas{
+        display: inherit;
+        height: auto;
+    }
+    .caracteristicas .element-box{
+        margin: auto;
+    }
+    .product{
+        margin: auto;
+    }
+}

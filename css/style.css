@@ -1,0 +1,221 @@
+/* ---------------------Variables */
+*{
+    box-sizing:border-box;
+}
+:root{
+    /* colores */
+    --chocho-color:#754D29;
+    --chochodark-color: #593B1F;
+    --white-color:#F1F3F0;
+    --skyblue-color:#9BA2FF;
+    --black-color:#363635;
+    /* texto */
+    --normal:12px;
+    --media: 17px;
+    --grande: 20px;
+    /* box shadow */
+    --box: 2px 3px 6px #b5b5b5;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: flex;
+    background-color: var(--chocho-color);
+    padding: 3px;
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+nav .brand-image img{
+    height: 50px;
+}
+nav ul {
+    display: flex;
+}
+nav li{
+    padding-right: 10px;
+    list-style: none;
+}
+a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+nav li a:hover{
+    color: var(--skyblue-color);
+}
+.main-section{
+    height: 350px;
+    padding: 80px;
+    text-align: center;
+}
+.products{
+    background-image: url('../img/cuadro.png');
+    height: 350px;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+}
+.product{
+    padding: 10px;
+    max-width: 350px;
+    margin-top: -150px;
+}
+.product .content{
+    background-color: var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+}
+.img-content{
+    margin: auto;
+    text-align: center;
+    width:70%;
+}
+.img-content img{
+    width: 100%;
+}
+.main-button{
+    background-color: var(--chocho-color);
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--white-color);
+    cursor: pointer;
+    border-radius: 3px;
+}
+.main-button:hover{
+    background-color: var(--chochodark-color);
+}
+.caracteristicas{
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-evenly;
+}
+.caracteristicas .element-box{
+    width: 155px;
+}
+.element-box img{
+    max-width: 100%;
+}
+h3{
+    font-weight: 700;
+    font-size: var(--grande);
+}
+.element-box p,
+.element-box h3{
+    text-align: center
+}
+.menciones{
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menciones h1{
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+}
+.mencion{
+    margin-left: 15px;
+    width: 239px;
+    box-shadow: var(--box);
+    margin-bottom: 15px;
+    
+}
+
+.mencion .section-img{
+    height: 134px;
+    width: 100%;
+    overflow: hidden;
+}
+.mencion .section-img img{
+    width: 100%;
+    margin-top: -70px;
+}
+.section-text{
+    padding: 10px;
+}
+footer{
+    margin-top: 40px;
+    background: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+footer .terminos{
+    font-weight: 700;
+}
+footer p{
+    color: var(--white-color);
+}
+/* Contenido de pagina producto */
+.img-producto{
+    width: 300px;
+}
+.img-producto img{
+    width: 100%;
+    vertical-align: top;
+}
+.info-product,
+.img-producto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text-product{
+    font-size: var(--media);
+}
+.product-title{
+    width: 100%;
+}
+.producto{
+    margin-bottom: 90px;
+}
+/* ---------------------------------------------VENTA */
+.main-venta{
+    min-height: calc(94vh - 52px - 90px - 37px);
+    margin-top: 90px;
+}
+.modulo-pago{
+    width: 100%;
+    background: white;
+    box-shadow: var(--box);
+    padding: 10px;
+    max-width: 470px;
+;}
+.img-pago{
+    max-width: 350px;
+    margin: auto;
+    width: 100%;
+}
+.img-pago img{
+    width: 100%;
+}
+.form{
+    height: 300px;
+}
+.modulo-pago form{
+    display: flex;
+    flex-direction: column;
+}
+.modulo-pago .data{
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid var(--black-color);
+}
+label{
+    font-size: var(--normal);
+    margin-top: 5px;
+}
+.modulo-pago .main-button{
+    margin-top: 10px;
+}
